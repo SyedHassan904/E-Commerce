@@ -37,6 +37,17 @@ app.use("/api/order", orderRouter);
 app.use("/api/progress", progressRouter);
 
 const port = 4000 || process.env.PORT;
-app.listen(port, () => {
-    console.log(`http://localhost:${port}`);
-});
+const startServer = async () => {
+  try {
+    await connectDB(); // wait for DB
+
+    app.listen(process.env.PORT || 4000, () => {
+      console.log(`Server running`);
+    });
+
+  } catch (error) {
+    console.log("Server start failed:", error);
+  }
+};
+
+startServer();
