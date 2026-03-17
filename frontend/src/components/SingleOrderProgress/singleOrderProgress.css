@@ -1,0 +1,103 @@
+/* Single order horizontal progress */
+.singleOrderProgressSection {
+    max-width: 1200px;
+    margin: 8px auto 0 auto;
+    padding: 0 20px 8px 20px;
+    margin-top: 60px;
+}
+
+.singleOrderProgressTrack {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    align-items: center;
+    position: relative;
+}
+
+.singleOrderProgressBaseLine {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.singleOrderProgressFillLine {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    height: 2px;
+    background: #7c4dff;
+    transition: width 300ms ease;
+}
+
+.singleProgressWidget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sinOrdProIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #b39ddb; /* default gray-purple for upcoming */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 0 0 4px #ede7f6;
+    font-weight: 600;
+}
+
+.sinOrdProIcon.completed,
+.sinOrdProIcon.current {
+    background: #7c4dff;
+}
+
+.singleProgressWidget p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+@media (max-width: 768px) {
+    .singleOrderProgressSection {
+        padding: 0 12px 8px 12px;
+    }
+    .singleOrderProgressTrack {
+        gap: 14px;
+    }
+    .singleProgressWidget p {
+        font-size: 12px;
+    }
+}
+
+/* Responsive: stack single order progress vertically on small screens */
+@media (max-width: 600px) {
+    .singleOrderProgressTrack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .singleOrderProgressBaseLine,
+    .singleOrderProgressFillLine {
+      display: none; /* hide connecting line in vertical layout */
+    }
+  
+    .singleProgressWidget {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .singleProgressWidget p {
+      margin: 0;
+      font-size: 13px;
+    }
+  }
+  

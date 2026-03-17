@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.navlink{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Theme variables */
+:root{
+  --admin-bg: #f6f7fb;
+  --admin-surface: #ffffff;
+  --admin-elevated: #ffffff;
+  --admin-border: #e5e7eb;
+  --admin-text-primary: #111827;
+  --admin-text-secondary: #6b7280;
+  --admin-hover: #f3f4f6;
+  --admin-selected: #ede9fe;
+  --admin-accent: #7c3aed;
+}
+
+[data-theme="dark"]{
+  --admin-bg: #0f172a;
+  --admin-surface: #0b1220;
+  --admin-elevated: #111827;
+  --admin-border: #1f2937;
+  --admin-text-primary: #e5e7eb;
+  --admin-text-secondary: #9ca3af;
+  --admin-hover: #111827;
+  --admin-selected: #1f2937;
+  --admin-accent: #8b5cf6;
+}
+
+/* Layout */
+.mainContainer{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: calc(100vh - 64px);
+  background: var(--admin-bg);
+}
+
+.containerRouter{
+  padding: 20px;
+}
+
+/* Elevation helpers */
+.card{
+  background: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.06);
+}

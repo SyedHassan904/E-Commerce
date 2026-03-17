@@ -1,0 +1,149 @@
+/* Admin Navbar */
+#adminNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--admin-surface);
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.searchAndLogo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.searchAndLogo img{
+    height: 32px;
+    width: auto;
+}
+
+.searchField{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--admin-border);
+    border-radius: 10px;
+    background: var(--admin-elevated);
+}
+.searchField input{
+    border: none;
+    outline: none;
+    min-width: 260px;
+    background: transparent;
+    color: var(--admin-text-primary);
+}
+
+.navbarProfileSec{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.iconCircle{
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid var(--admin-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--admin-elevated);
+    position: relative;
+    cursor: pointer;
+    color: var(--admin-text-primary);
+}
+.navCircle{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--admin-accent);
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.themeToggleBtn{
+    border-style: solid;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #adminNavbar {
+        padding: 12px 16px;
+    }
+    
+    .searchField input {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px){
+    #adminNavbar{ 
+        padding: 10px 12px; 
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .searchAndLogo {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .searchField input{ 
+        min-width: 140px; 
+        font-size: 14px;
+    }
+    
+    .navbarProfileSec {
+        gap: 8px;
+    }
+    
+    .iconCircle {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .navCircle {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    #adminNavbar {
+        padding: 8px 10px;
+    }
+    
+    .searchAndLogo img{ 
+        height: 24px; 
+    }
+    
+    .searchField{ 
+        padding: 4px 8px; 
+    }
+    
+    .searchField input{ 
+        min-width: 100px;
+        font-size: 12px;
+    }
+    
+    .iconCircle {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .navCircle {
+        width: 14px;
+        height: 14px;
+        font-size: 9px;
+    }
+}

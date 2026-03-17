@@ -1,0 +1,120 @@
+/* Pagination Component Styles - Matching the image design */
+.paginationContainer {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+
+.pagSecCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 16px 0;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    width: 100%;
+}
+
+.paginationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+.paginationButton:hover:not(.disabled) {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.paginationButton.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+.paginationNumbers {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.paginationNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+.paginationNumber:hover {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.paginationNumber.active {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.paginationNumber.active:hover {
+    background-color: #7c3aed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .paginationContainer {
+        padding: 12px 0;
+        margin: 15px auto;
+    }
+    
+    .paginationButton,
+    .paginationNumber {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .paginationContainer {
+        padding: 10px 0;
+        margin: 10px auto;
+    }
+    
+    .paginationButton,
+    .paginationNumber {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+        margin: 0 1px;
+    }
+}
+

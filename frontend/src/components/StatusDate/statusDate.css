@@ -1,0 +1,20 @@
+/* statusDateContext */
+.statusDateContext{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+}
+
+/* statusDate */
+.statusDate{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* statusDatePara */
+.statusDatePara{
+    margin-top: 3px;
+    font-size: 13px;
+}

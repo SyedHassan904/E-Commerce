@@ -1,0 +1,177 @@
+/* filterOrderSection */
+.filterOrderSection{
+    display: flex;
+    padding: 50px 50px;
+    gap: 40px;
+}
+
+/* filterOrdersFilterBox */
+.filterOrdersFilterBox{
+    flex: 2;
+    background-color: #fff;
+    max-height: max-content;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 12px 22px;
+}
+
+/* userAllOrdersContainer */
+.userAllOrdersContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    flex: 11;
+}
+
+.filterOrdersFilterBox h3{
+    font-weight: 800;
+}
+
+.orderStatusParaHead{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* filterOrderInputFieldContainer */
+.filterOrderInputFieldContainer{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.filterOrderInpFiled{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterOrderInpFiled p{
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/* filterOrderSingleOrder */
+.filterOrderSingleOrder{
+    padding: 25px 20px;
+    display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.filterOrderSingleOrder:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* filterOrderImgAndContent */
+.filterOrderImgAndContent{
+    display: flex;
+    gap: 18px;
+    flex: 2.4;
+}
+
+.filterOrderPrice{
+    flex: 1;
+}
+
+/* statusDateDiv */
+.statusDateDiv{
+    flex: 1.7;
+}
+
+/* filterOrderImg */
+.filterOrderImg img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+/* filterOrderTitle */
+.filterOrderTitle{
+    font-weight: 500;
+}
+
+/* filterOrderSizes */
+.filterOrderSizes{
+    margin-top: 8px;
+    font-weight: 200;
+    color: #777;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .filterOrderSection {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filterOrderSection {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    
+    .filterOrdersFilterBox {
+        width: 100%;
+        flex: none;
+    }
+    
+    .userAllOrdersContainer {
+        flex: none;
+        width: 100%;
+    }
+    
+    .filterOrderSingleOrder {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .filterOrderImgAndContent {
+        flex: none;
+        width: 100%;
+    }
+    
+    .filterOrderPrice,
+    .statusDateDiv {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .filterOrderSection {
+        padding: 20px 15px;
+    }
+    
+    .filterOrdersFilterBox {
+        padding: 15px;
+    }
+    
+    .filterOrderInputFieldContainer {
+        margin-top: 20px;
+    }
+    
+    .filterOrderSingleOrder {
+        padding: 15px;
+    }
+    
+    .filterOrderImgAndContent {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .filterOrderImg img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .filterOrderTitle {
+        font-size: 14px;
+    }
+    
+    .filterOrderSizes {
+        font-size: 12px;
+    }
+}

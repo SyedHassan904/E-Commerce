@@ -1,0 +1,52 @@
+/* Payment Success banner */
+.orderPlacedMessageBox {
+    max-width: 1200px;
+    margin: 24px auto 8px auto;
+    margin-top: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.orderPlacedMessageBox .orderPlacedInner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #2e7d32; /* green */
+    color: #fff;
+    border-radius: 6px;
+    padding: 14px 18px;
+}
+
+.orderPlacedCheckIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.orderPlacedMessage {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.orderPlacedMessage .paySuc {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.orderPlacedMessage .paySucDes {
+    font-size: 14px;
+    opacity: 0.95;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .orderPlacedMessageBox {
+        padding: 0 12px;
+    }
+}
+

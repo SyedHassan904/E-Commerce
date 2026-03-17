@@ -1,0 +1,34 @@
+.header-banner {
+    background-color: #5146E5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.header-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header-banner {
+        padding: 8px;
+    }
+    
+    .header-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-banner {
+        padding: 6px;
+    }
+    
+    .header-text {
+        font-size: 11px;
+    }
+}

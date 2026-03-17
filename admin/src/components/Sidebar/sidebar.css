@@ -1,0 +1,46 @@
+.adminSidebar{
+    width: 260px;
+    min-height: calc(100vh - 64px);
+    background: var(--admin-surface);
+    border-right: 1px solid var(--admin-border);
+    padding: 16px 12px;
+    position: sticky;
+    top: 64px;
+}
+
+.sidebarList{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    color: var(--admin-text-secondary);
+    border-radius: 10px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebarList:hover{
+    background: var(--admin-hover);
+    color: var(--admin-text-primary);
+}
+
+.navlink.active .sidebarList{
+    background: var(--admin-selected);
+    color: var(--admin-text-primary);
+}
+
+@media (max-width: 1024px){
+    .adminSidebar{ width: 220px; }
+}
+
+@media (max-width: 768px){
+    .adminSidebar{ 
+        position: fixed;
+        top: 56px;
+        left: 0;
+        bottom: 0;
+        z-index: 40;
+        transform: translateX(0);
+        width: 220px;
+    }
+}
+

@@ -1,0 +1,25 @@
+.SingleBarRating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.label {
+    width: 90px;
+}
+
+.barWrapper {
+    flex: 1; /* <-- ensures bar takes available space */
+}
+
+.review {
+    width: 40px;
+    text-align: right;
+}
+
+.ratingsBarContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

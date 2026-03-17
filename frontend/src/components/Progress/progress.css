@@ -1,0 +1,164 @@
+/* checkOutPageProgressSection */
+.checkOutPageProgressSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.progressWidget{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.progressWidget hr{
+    width: 250px;
+    border: 0.5px solid #e9e9e9;
+}
+
+.progressWidget p{
+    font-size: 14px;
+}
+
+.checkDivCircle{
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #7c3aed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.checkIcon{
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+.divCircle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #999;
+    color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .progressWidget hr {
+        width: 150px;
+    }
+    
+    .progressWidget p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkOutPageProgressSection {
+        padding: 15px 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .progressWidget {
+        flex-shrink: 0;
+        margin: 0 8px;
+        gap: 8px;
+    }
+    
+    .progressWidget hr {
+        width: 60px;
+    }
+    
+    .divCircle,
+    .checkDivCircle {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+    }
+    
+    .divCircle span {
+        font-size: 13px;
+    }
+    
+    .checkIcon {
+        font-size: 13px !important;
+    }
+    
+    .progressWidget p {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkOutPageProgressSection {
+        padding: 10px 0;
+        scrollbar-width: none;
+    }
+    
+    .checkOutPageProgressSection::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .progressWidget {
+        margin: 0 6px;
+        gap: 6px;
+    }
+    
+    .progressWidget hr {
+        width: 40px;
+    }
+    
+    .divCircle,
+    .checkDivCircle {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+    }
+    
+    .divCircle span {
+        font-size: 12px;
+    }
+    
+    .checkIcon {
+        font-size: 12px !important;
+    }
+    
+    .progressWidget p {
+        font-size: 10px;
+    }
+}
+
+/* Responsive: stack progress vertically on small screens */
+@media (max-width: 600px) {
+    .checkOutPageProgressSection {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .progressWidget {
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .progressWidget hr {
+      display: none; /* hide horizontal lines in stacked view */
+    }
+  
+    .progressWidget p {
+      font-size: 13px;
+    }
+  }
+  

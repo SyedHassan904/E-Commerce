@@ -1,0 +1,248 @@
+/* Product Gallery Styles - Matching the provided design */
+.productGallerySection {
+    /* padding: 40px 0; */
+    background-color: #ffffff;
+    /* margin: 20px 0; */
+    margin-top: -40px;
+    padding: 0px 40px;
+    margin-bottom: 80px;
+}
+
+.galleryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.galleryTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.paginationDots {
+    display: flex;
+    gap: 8px;
+}
+
+.paginationDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d1d5db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginationDot.active {
+    background-color: #8b5cf6;
+}
+
+.paginationDot:hover {
+    background-color: #9ca3af;
+}
+
+.productGalleryContainer {
+    border-top: 1px solid rgb(229, 229, 229);
+    position: relative;
+    /* padding: 20px 20px; */
+    padding: 20px 0px;
+}
+
+.productGalleryProductsBox .productBox {
+    cursor: pointer;
+    width: 210px;
+    transition: transform 0.3s ease;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productGalleryProductsBox {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding-bottom: 10px;
+}
+
+.productGalleryProductsBox::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.scrollArrowLeft {
+    left: 20px;
+}
+
+.scrollArrowRight {
+    right: 20px;
+}
+
+.arrowIcon{
+    color: #000 !important;
+}
+
+.scrollArrow:hover {
+    background-color: #4b5563;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.scrollArrow:hover .arrowIcon{
+    color: #fff !important;
+}
+
+.scrollArrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.scrollArrow:disabled:hover {
+    background-color: #6b7280;
+    transform: translateY(-50%);
+}
+
+.scrollArrow svg {
+    color: white;
+    font-size: 18px;
+}
+
+.productGalleryProductsBox .productImgBox {
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+    background-color: #f9fafb;
+    position: relative;
+}
+
+.productGalleryProductsBox .productImgBox img {
+    width: 150px !important;
+    height: 100%;
+    display: block;
+    padding: 0px !important;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .productGalleryContainer {
+        padding: 0 15px;
+    }
+    
+    .scrollArrowLeft {
+        left: 15px;
+    }
+    
+    .scrollArrowRight {
+        right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productGallerySection {
+        padding: 30px 0;
+    }
+    
+    .galleryHeader {
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+    
+    .galleryTitle {
+        font-size: 1.25rem;
+    }
+    
+    .productGalleryContainer {
+        padding: 0 10px;
+    }
+    
+    .productBox {
+        min-width: 180px;
+    }
+    
+    .productImgBox {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .scrollArrowLeft {
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .scrollArrowRight {
+        right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .scrollArrow svg {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productGallerySection {
+        padding: 20px 0;
+    }
+    
+    .galleryHeader {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .galleryTitle {
+        font-size: 1.125rem;
+    }
+    
+    .productGalleryContainer {
+        padding: 0 5px;
+    }
+    
+    .productBox {
+        min-width: 160px;
+    }
+    
+    .productImgBox {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .scrollArrowLeft,
+    .scrollArrowRight {
+        display: none;
+    }
+    
+    .productGalleryProductsBox {
+        gap: 15px;
+    }
+}

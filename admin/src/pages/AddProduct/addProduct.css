@@ -1,0 +1,14 @@
+.addProductPage{ display: flex; flex-direction: column; gap: 16px; }
+#addProductForm{ display: flex; flex-direction: column; gap: 14px; background: var(--admin-surface); border: 1px solid var(--admin-border); border-radius: 14px; padding: 16px; }
+.addProducInptFieldDiv, .addProductThreeFieldsDiv, .addProductSelectFieldDiv{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.addProductThreeFieldsDiv{ grid-template-columns: repeat(3, 1fr); }
+.addNewBtn{ padding: 12px; border-radius: 10px; border: 1px solid var(--admin-accent); background: var(--admin-accent); color: #fff; cursor: pointer; }
+.addNewBtn:hover{ filter: brightness(0.95); }
+
+@media (max-width: 768px){
+  .addProducInptFieldDiv, .addProductThreeFieldsDiv, .addProductSelectFieldDiv{ grid-template-columns: 1fr; }
+}
+
+
+
+

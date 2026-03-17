@@ -1,0 +1,43 @@
+.ordersPage{ display: flex; flex-direction: column; gap: 16px; }
+.orderSortDiv{ display: flex; gap: 10px; align-items: center; }
+.adminSortSelect{ padding: 10px 12px; border-radius: 10px; border: 1px solid var(--admin-border); background: var(--admin-elevated); color: var(--admin-text-primary); }
+
+.allOrdersPage{ background: var(--admin-surface); border: 1px solid var(--admin-border); border-radius: 14px; }
+.allOrdersPage > h1{ padding: 16px; }
+.allOrderDataTable{ padding: 0 16px 16px; }
+.allOrdersPageHeader, .allOrderPageItem{ display: grid; grid-template-columns: 1.2fr 1.6fr 0.8fr 2fr 0.8fr 0.8fr 0.8fr; gap: 12px; align-items: center; }
+.allOrdersPageHeader{ padding: 12px 0; border-bottom: 1px solid var(--admin-border); color: var(--admin-text-secondary); font-size: 13px; }
+.allOrdersItems{ display: flex; flex-direction: column; }
+.allOrderPageItem{ padding: 12px 0; border-bottom: 1px dashed var(--admin-border); }
+.allOrderPageItem:last-child{ border-bottom: none; }
+.allOrdersImgsDiv{ display: flex; gap: 6px; }
+.allOrdersImgsDiv img{ height: 40px; width: 40px; border-radius: 8px; object-fit: cover; }
+.allOrdersTitles{ font-weight: 600; }
+.allOrdersBrands{ color: var(--admin-text-secondary); font-size: 13px; }
+.allOrderUpdateStatusDiv button, .allOrdersDeleteDiv button{ padding: 8px 10px; border-radius: 8px; border: 1px solid var(--admin-border); background: var(--admin-elevated); cursor: pointer; }
+.allOrderUpdateStatusDiv button:hover, .allOrdersDeleteDiv button:hover{ background: var(--admin-hover); }
+.statusPopup{ background: var(--admin-surface); border: 1px solid var(--admin-border); border-radius: 10px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); padding: 8px; position: absolute; }
+.statusPopup p{ cursor: pointer; padding: 6px 8px; border-radius: 6px; }
+.statusPopup p:hover{ background: var(--admin-hover); }
+
+.allOrderPageDiv{ display: flex; justify-content: center; padding: 16px; }
+
+@media (max-width: 1024px){
+  .allOrdersPageHeader, .allOrderPageItem{ grid-template-columns: 1fr 1.4fr 0.8fr 1.8fr 0.8fr 0.8fr 0.8fr; }
+}
+
+@media (max-width: 768px){
+  .allOrdersPageHeader, .allOrderPageItem{ grid-template-columns: 1fr 1.4fr 0.8fr 1fr; }
+  .allOrdersPageHeader .allOrderPageHeaderCol:nth-child(n+5), .allOrderPageItem > *:nth-child(n+5){ display: none; }
+}
+/* allOrdersImgsDiv */
+.allOrdersImgsDiv img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* statusPopup */
+.statusPopup p{
+    cursor: pointer;
+}

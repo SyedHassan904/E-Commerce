@@ -1,0 +1,200 @@
+/* rateAndReviewBtn */
+#rateAndReviewBtn{
+    cursor: pointer;
+}
+
+/* orderDetContainer */
+.orderDetContainer{
+    padding: 50px 150px;
+}
+
+/* orderUserDetails */
+.orderUserDetails p{
+    font-size: 14px;
+}
+
+.ordererNameOD, .ordererNumberHeadOD{
+    font-weight: bold;
+}
+
+/* singleOrderProgressSection */
+.singleOrderProgressSectionDiv{
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 22px 90px;
+    margin-top: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.singleOrderProgressSectionDiv .singleOrderProgressSection{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* cancelOrderBtn */
+#cancelOrderBtn{
+    white-space: nowrap;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #8b5cf6;
+}
+
+/* orderDetailsProducts */
+.orderDetailsProducts{
+    margin-top: 30px;
+}
+
+/* singOrderDetContainer */
+.orderDetailsProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* singOrderDetContainer */
+.singOrderDetContainer{
+    padding: 25px 22px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sinODetImgAndContent */
+.sinODetImgAndContent{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* rateAndReviewBtn */
+.rateAndReviewBtn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #8b5cf6;
+    cursor: pointer;
+}
+
+/* starIcoOD */
+.starIcoOD{
+    font-size: 16px !important;
+}
+
+/* singOrderContentOD */
+.singOrderContentOD{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+}
+
+/* sonOrderDetImgDiv */
+.sonOrderDetImgDiv img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+/* orDetSizeCol */
+.orDetSizeCol{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .orderDetContainer {
+        padding: 40px 80px;
+    }
+    
+    .singleOrderProgressSectionDiv {
+        gap: 100px;
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .orderDetContainer {
+        padding: 30px 20px;
+    }
+    
+    .orderDetailsSection {
+        padding: 30px 20px;
+    }
+    
+    .singleOrderProgressSectionDiv {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    
+    .singOrderDetContainer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .sinODetImgAndContent {
+        width: 100%;
+    }
+    
+    .rateAndReviewBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .orderDetContainer {
+        padding: 20px 15px;
+    }
+    
+    .orderDetailsSection {
+        padding: 20px 15px;
+    }
+    
+    .orderUserDetails {
+        padding: 15px;
+    }
+    
+    .singleOrderProgressSectionDiv {
+        padding: 15px;
+    }
+    
+    .singOrderDetContainer {
+        padding: 15px;
+    }
+    
+    .sinODetImgAndContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .sonOrderDetImgDiv img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .singOrderContentOD {
+        font-size: 14px;
+    }
+    
+    .orDetSizeCol {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

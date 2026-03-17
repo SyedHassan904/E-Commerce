@@ -1,0 +1,350 @@
+/* orderDetailsSection */
+.orderDetailsSection{
+    padding: 40px 150px;
+}
+
+.orderUserDetails{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 18px 22px;
+    border-radius: 6px;
+}
+
+.orderDetailsSection .backBtn{
+    margin-top: 20px;
+}
+
+.orderUserDetails{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ordererName{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px !important;
+    text-transform: capitalize;
+}
+
+.ordererName, .ordererNumberHead{
+    font-weight: 550;
+}
+
+
+.orderSummaryAndContainerSection{
+    gap: 40px;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+.singleOrderCartProduct{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    padding: 22px;
+    gap: 22px;
+}
+
+
+.userAllOrdersData{
+    flex: 2;
+}
+
+.userordersSummary{
+    flex: 1;
+}
+
+.sinOrdCarProImg img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+}
+
+.sinOrderProductContent{
+    padding: 8px 0px;
+}
+
+.sinOrderProName{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sinOrderSizeAndColor{
+    font-size: 14px;
+    margin-top: 6px;
+    color: #777;
+    text-transform: capitalize;
+}
+
+.orderBrand{
+    margin-top: 7px;
+    color: #777;
+}
+
+.singleOrderPriceDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.sinOrdDis{
+    text-decoration: line-through;
+    color: #999;
+}
+
+.sinOrdPrice{
+    font-weight: bold;
+}
+
+.sinOrdPrcPer{
+    color: #10b981;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Price Details Section */
+.userordersSummary {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.pDetPara {
+    font-size: 14px;
+    font-weight: 600;
+    color: #878787;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.priceDetailsDiv {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.crtSmallDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.crtSmallDiv:last-child {
+    margin-bottom: 0;
+}
+
+.cpdPara {
+    font-size: 16px;
+    color: #212121;
+    font-weight: 400;
+}
+
+.totalCartItemsPara {
+    font-weight: 500;
+}
+
+.totalCartPrice {
+    font-size: 16px;
+    color: #212121;
+    font-weight: 500;
+}
+
+.green {
+    color: #388e3c;
+    font-weight: 500;
+}
+
+/* Total Amount Section */
+.cartTotalAmountDiv {
+    padding-top: 16px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.totalAmSmDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toSmDivBold {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.boldPlusGreen {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212121;
+}
+
+/* Payment Section */
+.paymentSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#paymentSelect {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #212121;
+    border: 1px solid #d4d5d9;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#paymentSelect:hover {
+    border-color: #878787;
+}
+
+#paymentSelect:focus {
+    border-color: #2874f0;
+}
+
+.purpleBtn {
+    background-color: #7c3aed;
+    width: 100%;
+    padding: 14px 16px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.purpleBtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #8a47ff;
+}
+
+.purpleBtn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .orderDetailsSection {
+        padding: 30px 80px;
+    }
+    
+    .orderSummaryAndContainerSection {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .orderDetailsSection {
+        padding: 30px 20px;
+    }
+    
+    .orderSummaryAndContainerSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .userAllOrdersData {
+        flex: none;
+        width: 100%;
+    }
+    
+    .userordersSummary {
+        position: static;
+        margin-top: 0;
+        flex: none;
+        width: 100%;
+    }
+    
+    .singleOrderCartProduct {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .pDetPara {
+        font-size: 12px;
+    }
+    
+    .cpdPara,
+    .totalCartPrice {
+        font-size: 14px;
+    }
+    
+    .toSmDivBold,
+    .boldPlusGreen {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orderDetailsSection {
+        padding: 20px 15px;
+    }
+    
+    .orderUserDetails {
+        padding: 15px;
+    }
+    
+    .singleOrderCartProduct {
+        padding: 15px;
+    }
+    
+    .sinOrdCarProImg img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .sinOrderProName {
+        font-size: 13px;
+    }
+    
+    .sinOrderSizeAndColor,
+    .orderBrand {
+        font-size: 12px;
+    }
+    
+    .userordersSummary {
+        padding: 20px;
+    }
+    
+    .pDetPara {
+        font-size: 11px;
+    }
+    
+    .cpdPara,
+    .totalCartPrice {
+        font-size: 13px;
+    }
+    
+    .toSmDivBold,
+    .boldPlusGreen {
+        font-size: 15px;
+    }
+    
+    .purpleBtn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

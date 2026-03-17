@@ -1,0 +1,177 @@
+/* Login Page Styles */
+.loginPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 16px;
+}
+
+#loginForm {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    padding: 32px;
+    position: relative;
+}
+
+#loginForm .MuiTextField-root {
+    margin-bottom: 24px;
+}
+
+#loginForm .MuiOutlinedInput-root {
+    border-radius: 8px;
+}
+
+#loginForm .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--celestial-purple);
+}
+
+#loginForm .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--celestial-purple);
+}
+
+#loginForm .MuiInputLabel-root.Mui-focused {
+    color: var(--celestial-purple);
+}
+
+.userBtn {
+    width: 100%;
+    background-color: var(--celestial-purple);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.userBtn:hover {
+    background-color: var(--celestial-dark-purple);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.accountManageDiv {
+    /* margin-top: 32px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountManageDiv p {
+    color: #6b7280;
+}
+
+.accManageBtn {
+    color: var(--celestial-purple);
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+.accManageBtn:hover {
+    color: var(--celestial-dark-purple);
+}
+
+/* Sicial Login */
+.socialButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.googleBtn,
+.facebookBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.googleBtn {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebookBtn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+}
+
+.googleBtn img{
+  width: 60px !important;
+  margin-left: -8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .loginPage {
+        padding: 12px;
+    }
+
+    #loginForm {
+        padding: 24px;
+        max-width: 100%;
+    }
+
+    .userBtn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginPage {
+        padding: 8px;
+    }
+
+    #loginForm {
+        padding: 20px;
+    }
+
+    #loginForm .MuiTextField-root {
+        margin-bottom: 20px;
+    }
+
+    .userBtn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .accountManageDiv {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .accManageBtn {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
