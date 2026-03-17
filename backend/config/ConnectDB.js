@@ -1,14 +1,15 @@
 import mongoose from "mongoose";
-const connectDB = async (req, res) =>{
-    try{
-        mongoose.connection.on("connected" , () =>{
-            console.log("Database Connected Successfully");
-        })
-        await mongoose.connect(`${process.env.MONGODB_URI}shokiBase`);
-    }catch(error){
-        console.log(error.message);
-    }
-}
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(`${process.env.MONGODB_URI}shokiBase`);
+
+    console.log("Database Connected Successfully");
+
+  } catch (error) {
+    console.log("DB Error:", error.message);
+    process.exit(1); // stop app if DB fails
+  }
+};
 
 export default connectDB;
-
